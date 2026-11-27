@@ -52,7 +52,7 @@ resource "aws_iam_role_policy" "this" {
         "logs:DescribeLogGroups",
         "logs:DescribeLogStreams",
       ]
-      Resource = [aws_cloudwatch_log_group.this.arn,"${aws_cloudwatch_log_group.this.arn}:*"]
+      Resource = [aws_cloudwatch_log_group.this.arn, "${aws_cloudwatch_log_group.this.arn}:*"]
     }]
   })
 }
