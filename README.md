@@ -50,7 +50,7 @@ Use a module directly from GitHub:
 
 ```hcl
 module "bucket" {
-  source      = "github.com/<your-github-username>/terraform-security-modules//modules/aws/s3-secure-bucket?ref=v0.1.0"
+  source      = "github.com/okieni/terraform-security-modules//modules/aws/s3-secure-bucket?ref=v0.1.0"
   bucket_name = "my-secure-bucket-123"
 }
 ```
